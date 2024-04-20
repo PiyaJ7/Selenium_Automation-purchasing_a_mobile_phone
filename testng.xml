@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="eBay Purchase Suite" parallel="tests">
+    <test name="eBay Purchase Chrome Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="selenium.EbayMobilePhonePurchase">
+            </class>
+        </classes>
+    </test>
+    <test name="eBay Purchase Firefox Test">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="selenium.EbayMobilePhonePurchase">
+            </class>
+        </classes>
+    </test>
+</suite>
